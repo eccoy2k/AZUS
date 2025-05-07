@@ -150,6 +150,7 @@ ul{
      height: calc(100vh - var(--scroll-pad));
      margin: var(--scroll-pad) 0;
      overflow: hidden;
+     padding: 5rem;
 }
 .hero{
      position: absolute;
