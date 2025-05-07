@@ -19,3 +19,9 @@ hiddenElements.forEach((el) => observer.observe(el));
 const navigationHeight = document.querySelector('.nav').offsetHeight;
 console.log(navigationHeight);
 document.documentElement.style.setProperty('--scroll-pad', `${navigationHeight+30}px`);
+
+
+const viewWidth = window.innerWidth;
+if (viewWidth < 700) {
+    document.getElementsByClassName('nav')
+}
