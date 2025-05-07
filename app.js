@@ -1,3 +1,5 @@
+// Set up observer to animate elements when they come into view
+
 const observer = new IntersectionObserver((entries) => {
      entries.forEach((entry) => {
           console.log(entry);
@@ -12,6 +14,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+// Offset by navbar height when scrolling
 
 const navigationHeight = document.querySelector('.nav').offsetHeight;
 console.log(navigationHeight);
